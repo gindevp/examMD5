@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Tour} from "../../model/tour";
 import {TourService} from "../../service/tour.service";
 import swal from "sweetalert";
@@ -9,30 +9,31 @@ import swal from "sweetalert";
   styleUrls: ['./tour.component.css']
 })
 export class TourComponent implements OnInit {
-tours: Tour[]=[]
-// @ts-ignore
-  tour:Tour={}
+  tours: Tour[] = []
+
   constructor(private tourService: TourService) {
-  this.getAll();
+    this.getAll();
   }
 
   ngOnInit(): void {
   }
-  getAll(): Tour[]{
+
+  getAll(): Tour[] {
     this.tourService.getAllTour().subscribe(
-      tours=>{
-        this.tours= tours;
+      tours => {
+        this.tours = tours;
       }
     )
     return this.tours;
   }
-  delete(id: any){
+
+  delete(id: any) {
 
     swal({
       title: "Xóa tuor",
-      text: `Tour du lịch: ${this.tours[id].title}
-Giá: ${this.tours[id].price}
-Giới thiệu: ${this.tours[id].description}`,
+      text: `Tour du lịch: ${this.findTourById(id).title}
+Giá: ${this.findTourById(id).price}
+Giới thiệu: ${this.findTourById(id).description}`,
       icon: "warning",
       // @ts-ignore
       buttons: true,
@@ -44,7 +45,8 @@ Giới thiệu: ${this.tours[id].description}`,
             icon: "success",
           });
           this.tourService.deleteTour(id).subscribe(
-            next =>{this.tours = this.getAll();
+            next => {
+              this.tours = this.getAll();
             },
             error => {
               alert("error")
@@ -57,12 +59,22 @@ Giới thiệu: ${this.tours[id].description}`,
   }
 
   detail(id: number) {
+    console.log(this.tours)
     swal({
       title: "Show detail",
-      text: `Tour du lịch: ${this.tours[id].title}
-Giá: ${this.tours[id].price}
-Giới thiệu: ${this.tours[id].description}`,
-      // @ts-ignore
+      text: `Tour du lịch: ${this.findTourById(id).title}
+Giá: ${this.findTourById(id).price}
+Giới thiệu: ${this.findTourById(id).description}`,
     })
+  }
+  findTourById(id: number): Tour{
+    // @ts-ignore
+    let tour: Tour={}
+    for (let i = 0; i < this.tours.length; i++) {
+      if(this.tours[i].id==id){
+        return tour=this.tours[i];
+      }
+    }
+    return tour;
   }
 }
