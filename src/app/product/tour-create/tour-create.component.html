@@ -1,0 +1,16 @@
+<h1 style="text-align: center">Tạo sản phẩm mới</h1>
+<form (ngSubmit)="createTour()" class="container">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" name="name" [(ngModel)]="tour.title" class="form-control" id="name" aria-describedby="" placeholder="name">
+  </div>
+  <div class="form-group">
+    <label for="price">Price</label>
+    <input type="number" name="price" [(ngModel)]="tour.price" class="form-control" id="price" aria-describedby="" placeholder="price">
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea name="description" [(ngModel)]="tour.description" class="form-control" id="description" aria-describedby="" placeholder="description"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
