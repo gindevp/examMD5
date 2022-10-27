@@ -31,6 +31,36 @@ const tuors = [
         title: 'Quy Nhơn',
         price: '10000000',
         description: 'Là một trong những thành phố biển đẹp nhất Nam Trung Bộ với nhiều bãi tắm lý tưởng như Cát Tiến, Nhơn Hội, Hải Giang. Đến đây du khách có thể hòa mình vào cảnh sắc thiên nhiên hùng vĩ, biển cả bao la với những cồn cát, hải đảo ngập tràn gió lộng, xen vào những bãi biển lấp lánh cát vàng.'
+    },{
+        id: 5,
+        title: 'Quy Nhơn',
+        price: '10000000',
+        description: 'Là một trong những thành phố biển đẹp nhất Nam Trung Bộ với nhiều bãi tắm lý tưởng như Cát Tiến, Nhơn Hội, Hải Giang. Đến đây du khách có thể hòa mình vào cảnh sắc thiên nhiên hùng vĩ, biển cả bao la với những cồn cát, hải đảo ngập tràn gió lộng, xen vào những bãi biển lấp lánh cát vàng.'
+    },{
+        id: 6,
+        title: 'Quy Nhơn',
+        price: '10000000',
+        description: 'Là một trong những thành phố biển đẹp nhất Nam Trung Bộ với nhiều bãi tắm lý tưởng như Cát Tiến, Nhơn Hội, Hải Giang. Đến đây du khách có thể hòa mình vào cảnh sắc thiên nhiên hùng vĩ, biển cả bao la với những cồn cát, hải đảo ngập tràn gió lộng, xen vào những bãi biển lấp lánh cát vàng.'
+    },{
+        id: 7,
+        title: 'Quy Nhơn',
+        price: '10000000',
+        description: 'Là một trong những thành phố biển đẹp nhất Nam Trung Bộ với nhiều bãi tắm lý tưởng như Cát Tiến, Nhơn Hội, Hải Giang. Đến đây du khách có thể hòa mình vào cảnh sắc thiên nhiên hùng vĩ, biển cả bao la với những cồn cát, hải đảo ngập tràn gió lộng, xen vào những bãi biển lấp lánh cát vàng.'
+    },{
+        id: 8,
+        title: 'Quy Nhơn',
+        price: '10000000',
+        description: 'Là một trong những thành phố biển đẹp nhất Nam Trung Bộ với nhiều bãi tắm lý tưởng như Cát Tiến, Nhơn Hội, Hải Giang. Đến đây du khách có thể hòa mình vào cảnh sắc thiên nhiên hùng vĩ, biển cả bao la với những cồn cát, hải đảo ngập tràn gió lộng, xen vào những bãi biển lấp lánh cát vàng.'
+    },{
+        id: 9,
+        title: 'Quy Nhơn',
+        price: '10000000',
+        description: 'Là một trong những thành phố biển đẹp nhất Nam Trung Bộ với nhiều bãi tắm lý tưởng như Cát Tiến, Nhơn Hội, Hải Giang. Đến đây du khách có thể hòa mình vào cảnh sắc thiên nhiên hùng vĩ, biển cả bao la với những cồn cát, hải đảo ngập tràn gió lộng, xen vào những bãi biển lấp lánh cát vàng.'
+    },{
+        id: 10,
+        title: 'Quy Nhơn',
+        price: '10000000',
+        description: 'Là một trong những thành phố biển đẹp nhất Nam Trung Bộ với nhiều bãi tắm lý tưởng như Cát Tiến, Nhơn Hội, Hải Giang. Đến đây du khách có thể hòa mình vào cảnh sắc thiên nhiên hùng vĩ, biển cả bao la với những cồn cát, hải đảo ngập tràn gió lộng, xen vào những bãi biển lấp lánh cát vàng.'
     },
 ];
 
