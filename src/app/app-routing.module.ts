@@ -4,7 +4,6 @@ import {RouterModule, Routes} from "@angular/router";
 import {TourComponent} from "./product/tour/tour.component";
 import {TourCreateComponent} from "./product/tour-create/tour-create.component";
 import {TourEditComponent} from "./product/tour-edit/tour-edit.component";
-import {TourDetailComponent} from "./product/tour-detail/tour-detail.component";
 
 
 const routes: Routes = [
@@ -19,10 +18,6 @@ const routes: Routes = [
   {
     path: 'edit/:id',
     component: TourEditComponent
-  },
-  {
-    path: 'detail/:id',
-    component: TourDetailComponent
   },
   {
     path: '',

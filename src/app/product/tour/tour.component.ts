@@ -56,4 +56,13 @@ Giới thiệu: ${this.tours[id].description}`,
       });
   }
 
+  detail(id: number) {
+    swal({
+      title: "Show detail",
+      text: `Tour du lịch: ${this.tours[id].title}
+Giá: ${this.tours[id].price}
+Giới thiệu: ${this.tours[id].description}`,
+      // @ts-ignore
+    })
+  }
 }
