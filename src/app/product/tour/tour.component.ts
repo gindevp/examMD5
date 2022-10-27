@@ -10,7 +10,8 @@ import swal from "sweetalert";
 })
 export class TourComponent implements OnInit {
 tours: Tour[]=[]
-
+// @ts-ignore
+  tour:Tour={}
   constructor(private tourService: TourService) {
   this.getAll();
   }
@@ -28,8 +29,10 @@ tours: Tour[]=[]
   delete(id: any){
 
     swal({
-      title: "Bạn chắc muốn xóa chứ",
-      text: "Nếu xóa, bạn sẽ không thể khôi phục lại được",
+      title: "Xóa tuor",
+      text: `Tour du lịch: ${this.tours[id].title}
+Giá: ${this.tours[id].price}
+Giới thiệu: ${this.tours[id].description}`,
       icon: "warning",
       // @ts-ignore
       buttons: true,
@@ -48,7 +51,7 @@ tours: Tour[]=[]
             }
           );
         } else {
-          swal("Thứ bạn cần xóa đã k được xóa");
+          swal("Thứ bạn cần xóa đã không được xóa");
         }
       });
   }
