@@ -1,6 +1,9 @@
 # ExamMD5
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+## Fake API
+run file json.js syntax "node json.js" in port 3000
+
 
 ## Development server
 
