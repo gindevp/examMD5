@@ -12,5 +12,10 @@
     <label for="description">Description</label>
     <textarea name="description" [(ngModel)]="tour.description" class="form-control" id="description" aria-describedby="" placeholder="description"></textarea>
   </div>
+  <div class="form-group mb-3">
+    <label for="formFile">Upload Image</label><br>
+    <input class="form-control" type="file" id="formFile" name="upload" #fileUploader (change)="showPreview($event)"/>
+  </div>
+  <img [src]="imgSrc" height="125" width="100" alt="Img" (click)="fileUploader.click()"><br>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
