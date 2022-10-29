@@ -8,6 +8,10 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { TourCreateComponent } from './product/tour-create/tour-create.component';
 import { TourEditComponent } from './product/tour-edit/tour-edit.component';
+import {AngularFireStorageModule} from "@angular/fire/compat/storage";
+import {AngularFireModule} from "@angular/fire/compat";
+import {environment} from "../environments/environment";
+import {AngularFireDatabaseModule} from "@angular/fire/compat/database";
 
 @NgModule({
   declarations: [
@@ -21,7 +25,10 @@ import { TourEditComponent } from './product/tour-edit/tour-edit.component';
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireStorageModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
